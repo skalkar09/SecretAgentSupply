@@ -1,0 +1,224 @@
+html {
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+header {
+  background-color: black;
+  color: white;
+}
+
+.logoTitle {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 0.66rem 0 0.66rem 0.5rem;
+}
+
+.logoTitle img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+.logoTitle span {
+  font-size: 1rem;
+}
+
+.newArrival {
+  background-image: url(../images/moto.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 25rem;
+}
+
+.newArrivalContainer {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.newArrivalHeading {
+  background-color: black;
+  color: white;
+  width: 20rem;
+  top: 9rem;
+  position: relative;
+  padding: 2rem 3rem;
+}
+
+.newArrivalHeading h4 {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.newArrivalHeading h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0.25rem 0;
+}
+
+.menuMain {
+  background-color: firebrick;
+}
+
+.navContainer {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.navDesktopView {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navContainer nav span {
+  padding: 0.75rem 0;
+  color: white;
+}
+
+.navMoblieView {
+  display: none;
+  text-align: center;
+}
+
+.productsMain {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.productsContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+}
+
+.product {
+  width: 30%;
+  border: 4px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product img {
+  height: 9rem;
+  max-width: 9rem;
+  padding: 2rem 0;
+}
+
+.product span {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+.otherInfoMain {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.otherInfoContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+}
+
+.info {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+.infoHeader {
+  background-color: black;
+  color: white;
+  padding: 1rem 0 1rem 2rem;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  margin-top: 4rem;
+}
+
+.footerContainer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 5rem 0;
+  text-align: left;
+}
+
+@media only screen and (max-width: 1024px) {
+  .navDesktopView {
+    display: none;
+  }
+  .navMoblieView {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .product {
+    width: 47%;
+  }
+  #thermalGlassesDiv {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .navDesktopView {
+    display: none;
+  }
+  .navMoblieView {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .product {
+    width: 90%;
+    margin: auto;
+  }
+  .info {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+  .productsContainer {
+    flex-wrap: wrap;
+  }
+  .otherInfoContainer {
+    flex-wrap: wrap;
+  }
+  .footerContainer {
+    text-align: center;
+  }
+  .newArrival {
+    height: 15rem;
+  }
+  .newArrivalHeading {
+    width: 100%;
+    padding: 1rem 2rem;
+    top: 10rem;
+  }
+  .newArrivalHeading h1{
+    font-size: 1rem;
+  }
+  .newArrivalHeading h4{
+    font-size: .77rem;
+  }
+  #cellularWatchDiv {
+    display: none;
+  }
+}
